@@ -29,7 +29,7 @@ app.set('views', getFileFromAbsolutePath('views'));
 // 🔧 Configo the Setter
 // Ustaw publiczny katalog plików statycznych w middleware.
 // Podpowiedź: app.use(express.static(...));
-app.use(express.static(getFileFromAbsolutePath('public/css')));
+app.use(express.static(getFileFromAbsolutePath('public')));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
