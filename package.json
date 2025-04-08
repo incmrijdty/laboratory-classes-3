@@ -11,9 +11,10 @@
   "dependencies": {
     "body-parser": "^2.2.0",
     "express": "^5.1.0",
-    "laboratory-classes-3": "file:"
+    "laboratory-classes-3": "file:",
+    "ejs": "^3.1.9"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.10"
   }
 }
