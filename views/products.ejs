@@ -10,14 +10,11 @@
 
  
   <%- include('partials/navigation', { menuLinks: menuLinks, activeLinkPath: activeLinkPath }) %>
-
   <main>
     <h1>Products</h1>
 
-    
     <% if (products?.length > 0) { %>
       <ul>
-        
         <% products.forEach(product => { %>
           <li>
             Name: <%= product.name %>, Description: <%= product.description %>
