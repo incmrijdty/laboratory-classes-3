@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl_PL">
+<html lang="pl">
   <head>
     <title><%= headTitle %></title>
     <link rel="stylesheet" href="/css/main.css" />
@@ -7,11 +7,15 @@
   <body>
     <%- include('partials/navigation', { menuLinks, activeLinkPath }) %>
     <main>
-      <h1>Newest product</h1>
+      <h1 class="heading">Newest product</h1>
       <% if (newestProduct && newestProduct.name) { %>
-        <div>New product data - <%= newestProduct.name %>: <%= newestProduct.description %></div>
+        <div class="product-info">
+          New product data - <%= newestProduct.name %>: <%= newestProduct.description %>
+        </div>
       <% } else { %>
-        <div>No new products available.</div>
+        <div class="product-info">
+          No new products available.
+        </div>
       <% } %>
     </main>
   </body>
