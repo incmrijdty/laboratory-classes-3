@@ -10,4 +10,4 @@ const getFileFromAbsolutePath = (catalog, fileWithFormat) => {
   return path.join(rootFileDir, catalog, fileWithFormat);
 };
 
-module.exports = getFileFromAbsolutePath;
+module.exports = { getFileFromAbsolutePath };

@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 
 const { PORT } = require("./config");
 const logger = require("./utils/logger");
-const productRoutes = require("./routing/product");
+const productRoutes = require("./routing/products");
 const logoutRoutes = require("./routing/logout");
 const killRoutes = require("./routing/kill");
 const homeRoutes = require("./routing/home");
@@ -53,4 +53,8 @@ app.use((request, response) => {
   logger.getErrorLog(url);
 });
 
-app.listen(PORT);
+//app.listen(PORT);
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
