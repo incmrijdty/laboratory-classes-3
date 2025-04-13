@@ -49,7 +49,7 @@ app.use((request, response) => {
 
   response
     .status(STATUS_CODE.NOT_FOUND)
-    .sendFile(path.join(__dirname, "./views", "404.html"));
+    .sendFile(path.join(__dirname, "./views", "404.ejs"));
   logger.getErrorLog(url);
 });
 

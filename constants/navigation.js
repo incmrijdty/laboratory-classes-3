@@ -33,3 +33,10 @@ const MENU_LINKS = [
     path: '/logout'
   }
 ];
+
+
+module.exports = {
+  HOME_LINK,
+  LOGOUT_LINKS,
+  MENU_LINKS
+};
