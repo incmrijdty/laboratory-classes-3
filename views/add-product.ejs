@@ -6,13 +6,13 @@
 </head>
 <body>
     <nav>
-        <% include partials/navigation.ejs { menuLinks: MENU_LINKS, activeLinkPath: '/product/add' } %>
+        <%- include('partials/navigation', { menuLinks, activeLinkPath }) %>
     </nav>
     
     <main>
         <h1 class="heading">Add Product</h1>
 
-        <form class="form" action="/product/add" method="POST">
+        <form class="form" action="/products/add" method="POST">
             
             <div class="form__group">
                 <label class="form__label" for="name">Name</label>

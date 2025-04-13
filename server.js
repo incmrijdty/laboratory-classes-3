@@ -40,7 +40,7 @@ app.use((request, _response, next) => {
   next();
 });
 
-app.use("/product", productRoutes);
+app.use("/products", productRoutes);
 app.use("/logout", logoutRoutes);
 app.use("/kill", killRoutes);
 app.use(homeRoutes);

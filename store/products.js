@@ -6,4 +6,4 @@ const productsSlice = {
   products: []        
 };
 
-module.exports = productsSlice;
+module.exports = { productsSlice };
